@@ -22,6 +22,7 @@ public class Main {
         }
     }
 
+    static int count = 0;
     public static void merge_sort(int[] a,int l,int r){
         if (l>=r) return ;
         int mid = l+r >>1;

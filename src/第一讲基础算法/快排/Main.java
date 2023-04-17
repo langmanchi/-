@@ -9,17 +9,33 @@ public class Main {
     public static void qucik_sort(int[] a,int l,int r){
         if (l>=r) return;  //区间只有一个数，没有数直接return
         //设置偏移量  以j背的模板
+
+//        int mid = l+r >> 1;
+//        int i=l,j=r;
+//        while(i<j){
+        //这种写法，第一回交换之后直接无法移动
+//            while(a[i]<a[mid]) i++;
+//            while(a[j]>a[mid]) j--;
+//            if(i<j){
+//                int tmp = a[i];
+//                a[i] = a[j];
+//                a[j]= tmp;
+//            }
+//        }
+//        System.out.println(j);
         int x = a[l+r >> 1],i=l-1,j=r+1;
 
         while (i<j){
             do i++;while (a[i]<x);
             do j--;while (a[j]>x);
+            System.out.println(i+" "+j);
             if (i<j)  {
                 int temp = a[j];
                 a[j] = a[i];
                 a[i] = temp;
             }
         }
+
         qucik_sort(a,l,j);
         qucik_sort(a,j+1,r);
     }

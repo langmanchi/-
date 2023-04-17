@@ -80,6 +80,7 @@ public class Main {
         sc.close();
     }
 
+
     public static void push(int x){
         stack[++top] = x;
     }
