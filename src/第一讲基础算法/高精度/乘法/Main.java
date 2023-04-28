@@ -1,5 +1,4 @@
-package 第一讲基础算法.高精度.减法;
-
+package 第一讲基础算法.高精度.乘法;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +12,7 @@ public class Main {
         BigInteger a = new BigInteger(in.readLine());
         BigInteger b = new BigInteger(in.readLine());
 
-        BigInteger c= a.subtract(b);
+        BigInteger c= a.multiply(b);
         System.out.println(c);
     }
 }
