@@ -1,4 +1,4 @@
-package 第四章.数学知识.约数;
+package 第四章.数学知识.质数;
 
 import java.util.Scanner;
 

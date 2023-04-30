@@ -1,4 +1,4 @@
-package 第五讲动态规划.背包问题;
+package 第五讲动态规划.背包问题.背包01;
 
 import java.util.Scanner;
 
